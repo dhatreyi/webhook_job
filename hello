@@ -1,4 +1,11 @@
-hello 
-Second line is added to check webhooks
-thirdline
-4th line
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
